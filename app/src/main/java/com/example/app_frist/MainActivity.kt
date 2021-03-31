@@ -2,32 +2,27 @@ package com.example.app_frist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Toast
+import com.example.app_frist.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class  MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState : Bundle?){
         super .onCreate(savedInstanceState)
+        //binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
     }
-}
-fun main(){
-    println("hello world")
-    val w =65f
-    val h = 1.7f
-    val bmi = w/(h*h)
-    println("your bmi = $bmi")
-
-    val p=person()
-    p.weight = 64F
-    p.height = 1.7F
-    println("your class bmi = ${p.getbmi()}")
-
-}
-class person
-{
-    var weight : Float=0F
-    var height : Float=0F
-    fun getbmi() :Float{
-        var bmi= weight/(height*height)
-        return  bmi
+    fun bmi (view:View) {
+        val weight = weight.text.toString().toFloat()
+        val height = height.text.toString().toFloat()
+        val bmi = weight / (height * height)
+        Log.d("BMI",bmi.toString())
     }
 }
+
+
+

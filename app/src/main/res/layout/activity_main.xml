@@ -4,4 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="727dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="weight"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/input_weight"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/math"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bmi"
+            android:text="記算!" />
+
+        <Button
+            android:id="@+id/hlep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hlep" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
