@@ -55,10 +55,10 @@
             android:text="@string/calculate_bmi" />
 
         <Button
-            android:id="@+id/hlep"
+            android:id="@+id/help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="hlep" />
+            android:text="@string/help" />
 
     </LinearLayout>
 
